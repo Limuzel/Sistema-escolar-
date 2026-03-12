@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sistema Escolar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container" id="loginTela">
+
+<h2>Login do Sistema</h2>
+
+<input type="text" id="usuario" placeholder="Email ou CPF">
+<input type="password" id="senha" placeholder="Senha">
+
+<br><br>
+
+<button onclick="login()">Entrar</button>
+
+</div>
+
+<div class="container" id="sistema" style="display:none">
+
+<h1>Sistema Escolar</h1>
+
+<h2>Cadastrar Aluno</h2>
+
+<input type="text" id="ra" placeholder="RA do aluno">
+<input type="text" id="nome" placeholder="Nome do aluno">
+<input type="number" id="idade" placeholder="Idade">
+<input type="text" id="turma" placeholder="Turma">
+<input type="text" id="responsavel" placeholder="Nome do responsável">
+<input type="text" id="escolaAnterior" placeholder="Escola anterior">
+
+<br><br>
+
+<button onclick="cadastrarAluno()">Cadastrar Aluno</button>
+
+<h2>Lista de Alunos</h2>
+
+<ul id="listaAlunos"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
